@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    max-width: 300px; /* Ajusta según el tamaño deseado */
+}
+
+.card img.bike {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre el info-container y el párrafo */
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.card img.icon {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    background-color: #a6eda6;
+    border-radius: 50%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin: 5px;
+    }
+    
+    .card img.icon {
+        width: 20px;
+        height: 20px;
+    }
+}
